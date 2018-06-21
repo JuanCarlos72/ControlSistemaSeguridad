@@ -1,0 +1,29 @@
+﻿<Controls:MetroWindow x:Class="ControlSistemaSeguridad.View.PuestoView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+		xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:local="clr-namespace:ControlSistemaSeguridad.View"
+        mc:Ignorable="d"
+        Title="Puestos" WindowStartupLocation="CenterScreen" Height="400" Width="600">
+    <Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition/>
+			<RowDefinition/>
+		</Grid.RowDefinitions>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition/>
+			<ColumnDefinition/>
+		</Grid.ColumnDefinitions>
+		<Label Grid.Row="0" Grid.Column="0" Content="Descripcion"/>
+		<TextBox Grid.Row="0" Grid.Column="1"/>
+		<DataGrid Grid.Row="1" Grid.ColumnSpan="2" AutoGenerateColumns="True"></DataGrid>
+		<StackPanel Orientation="Horizontal" Grid.Row="2" Grid.ColumnSpan="2">
+			<Button Content="Add"/>
+			<Button Content="Delete"/>
+
+		</StackPanel>
+	</Grid>
+</Controls:MetroWindow>
